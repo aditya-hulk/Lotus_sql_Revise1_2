@@ -46,5 +46,32 @@ If you want Idnetity value for particular table?***
 - Relation ship
 - master-details / parent-child
 # 7. Temporary table  in sql
+### Q) Hum existing table se temporary table kaise create kare?
+- use concept of Select statement for creating temp table
+- select * Into TempTableName from TableName
+-  local temp table # lagake use karte.
+    - select * Into #TempStud from Student_marks;
+### Q) Kaha dikhta temporary table?
+- Systeme Database -> TempDb-> temp table
+### Q) problem with local temporary table?
+- dusre session mein dikhta nahi
+### Q) Advantage of temptable
+- apne local temp table se data delete bhi kiya  
+    Toh original table ko koyi fark nhi padta.
+### Q) aapka local temp table drop kab honga?
+- yadi connection close ho jave
+- drop command
+### Q) hum 2 taarah se local temp table create kar sakte?
+- via select statement(copy existing table into temptable)
+- via create statement
+### Q) how to create global temporary table?
+- use concept of ##
+### Q)Advantage of global temp table?
+- access from any session
+### Q) Drop kab hota
+-  via drop command
+- jab sare session close ho jave.
+### Q) when to use temprary table
+- jab aapke pass kisi table ke rights nhi ho aur usse manipulate karna ho
 
 
